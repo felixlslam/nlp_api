@@ -1,0 +1,6 @@
+contractions==0.0.24
+nltk==3.4.5
+pyahocorasick==1.4.0
+six==1.13.0
+textsearch==0.0.17
+Unidecode==1.1.1

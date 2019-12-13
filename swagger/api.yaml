@@ -1,0 +1,29 @@
+openapi: 3.0.0
+
+info:
+  title: A Simple NLP API 
+  description: APIs used for common NLP operations. 
+  version: 1.0.0
+  
+paths:
+  /tokenize:
+    post:
+      summary: Tokenize a message. Removed all stop-words, punctuations and also duplicates.
+      operationId: tokenizer.tokenize
+      requestBody:
+        description: The message to be tokenized.
+        required: true
+        content:
+          text/plain:
+            schema: 
+                type: string
+      responses:
+        200:
+          description: Success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+
